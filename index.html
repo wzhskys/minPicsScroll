@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+	<title>jQuery多图滚动展示效果</title>
+	<link type="text/css" href="css/reset.css" rel="stylesheet">
+    <link type="text/css" href="css/index.css" rel="stylesheet">
+	<script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jQuery.minPicsScroll.0.0.1.js"></script>
+</head>
+<body style="overflow-y:hidden;">
+<div class="product-detail-left">
+    <div class="venue-pics-pcb">
+        <ul class="venue-pics-pcb-ul" id="newx-pics-allpic" style="width: 3300px; margin-left: -2560px;">
+            <li><img src="http://static.228.cn/upload/2014/01/23/AfterTreatment/1390460504312_d1v0-0.jpg" style="width: 640px;height: 418px;"></li>
+            <li><img src="http://static.228.cn/upload/2014/01/23/1390460504477_x0i8.jpg" style="width: 640px;height: 418px;"></li>
+            <li><img src="http://static.228.cn/upload/2014/01/23/1390460504648_g8t5.jpg" style="width: 640px;height: 418px;"></li>
+            <li><img src="http://static.228.cn/upload/2014/01/23/1390460504823_e2w2.jpg" style="width: 640px;height: 418px;"></li>
+            <li><img src="http://static.228.cn/upload/2014/01/23/1390460504964_l3j8.jpg" style="width: 640px;height: 418px;"></li>
+            <li><img src="http://static.228.cn/upload/2014/01/23/1390460504477_x0i8.jpg" style="width: 640px;height: 418px;"></li>
+            <li><img src="http://static.228.cn/upload/2014/01/23/1390460504648_g8t5.jpg" style="width: 640px;height: 418px;"></li>
+            <li><img src="http://static.228.cn/upload/2014/01/23/1390460504823_e2w2.jpg" style="width: 640px;height: 418px;"></li>
+            <li><img src="http://static.228.cn/upload/2014/01/23/1390460504964_l3j8.jpg" style="width: 640px;height: 418px;"></li>
+        </ul>
+        <div class="prev undb" style="display: none;">上一张</div>
+        <div class="next undb" style="display: none;">下一张</div>
+    </div>
+    <div class="venue-pics-title">国家大剧院<span class="weiya-18red ml10 newx-pics-rightbomb">5</span> / <span class="fw fs-14 newx-pics-rightbomb1">5</span></div>
+    <script type="text/javascript">
+        $('.newx-pics-rightbomb1').html($('#newx-pics-allpic li').length);
+    </script>
+    <div class="venue-pics-pcc">
+        <div class="venue-pics-pcc-more">
+            <div class="venue-pics-pcc-all">
+                <ul class="venue-pics-pccul" id="newx-pics-smallpic">
+                    <li><img src="http://static.228.cn/upload/2014/01/23/AfterTreatment/1390460504312_d1v0-0.jpg" style="width: 119px;height: 78px;"></li>
+                    <li><img src="http://static.228.cn/upload/2014/01/23/1390460504477_x0i8.jpg" style="width: 119px;height: 78px;"></li>
+                    <li><img src="http://static.228.cn/upload/2014/01/23/1390460504648_g8t5.jpg" style="width: 119px;height: 78px;"></li>
+                    <li><img src="http://static.228.cn/upload/2014/01/23/1390460504823_e2w2.jpg" style="width: 119px;height: 78px;"></li>
+                    <li><img src="http://static.228.cn/upload/2014/01/23/1390460504964_l3j8.jpg" style="width: 119px;height: 78px;"></li>
+                    <li><img src="http://static.228.cn/upload/2014/01/23/1390460504477_x0i8.jpg" style="width: 119px;height: 78px;"></li>
+                    <li><img src="http://static.228.cn/upload/2014/01/23/1390460504648_g8t5.jpg" style="width: 119px;height: 78px;"></li>
+                    <li><img src="http://static.228.cn/upload/2014/01/23/1390460504823_e2w2.jpg" style="width: 119px;height: 78px;"></li>
+                    <li><img src="http://static.228.cn/upload/2014/01/23/1390460504964_l3j8.jpg" style="width: 119px;height: 78px;"></li>
+                </ul>
+            </div>
+            <div class="venue-pics-left"></div>
+            <div class="venue-pics-right"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    $(function(){
+        //场馆图片滚动
+        picsPageScrolling({
+            scrollId: "#newx-pics-allpic",
+            scrollSmallId: "#newx-pics-smallpic",
+            lMoveId: ".prev",
+            rMoveId: ".next",
+            contBomLeft: ".venue-pics-left",
+            contBomRight: ".venue-pics-right",
+            showNumberId: ".newx-pics-rightbomb",
+            autoPlay: true,
+            speed: 4
+        });
+    })
+
+</script>
+</html>

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.venue-pics-left,.venue-pics-right,.venue-pics-left1,.venue-pics-right1{background:url("../images/venue.png")  no-repeat transparent;display:block;overflow:hidden;}
+.product-detail-left{width:750px;margin:50px auto;border:1px solid #ccc;}
+.weiya-18red{font-family:Tahoma;font-size:18px;color:#cc0001;}
+.venue-pics-title{color:#4c4c4c;margin-top:8px;margin-left:55px;}
+.venue-pics-pcb{margin-left:53px;margin-top:32px;height:418px;width:640px;overflow:hidden;position:relative;zoom:1;text-align:center;margin-left:auto;margin-right:auto;cursor:url(../images/venue-left-pointer.gif)}
+.venue-pics-pcc{height:95px;background-color:#f5f5f5;margin-top:8px;position:relative;zoom:1;padding-top:18px;}
+.venue-pics-pccul{width:3000px;}
+.venue-pics-pccul li{float:left;margin-right:11px;cursor:pointer;width:119px;}
+.venue-pics-pcb-ul{width:80000px;}
+.venue-pics-pcb-ul li{float:left;height:418px;width:640px;}
+.venue-pics-pcc-more{width:650px;overflow:hidden;margin-left:54px;}
+.venue-pics-pcc-all{position:relative;zoom:1;width:650px;overflow:hidden;text-align:center;margin-left:auto;margin-right:auto;}
+.venue-pics-left{position:absolute;width:19px;height:26px;background-position:-327px -82px;left:20px;top:45px;cursor:pointer;}
+.venue-pics-right{position:absolute;width:19px;height:26px;background-position:-365px -82px;right:20px;top:45px;cursor:pointer;}
+.venue-pics-pccul li.select{border:2px solid #cc0001;width:115px;height:74px;overflow:hidden;}
+.venue-pics-pccul li.select img{width:115px;height:74px;overflow:hidden;}
+.venue-pics-left1{background-position:-327px -113px;}
+.venue-pics-right1{background-position:-365px -113px;}
+.newx-pics{float:left;position:relative;width:790px;height:320px;overflow:hidden;zoom:1;margin-left:10px;}
+.newx-pics-allpic{width:80000px;height:320px;overflow:hidden;}
+.newx-pics-allpic li{float:left;width:790px;height:320px;position:relative;}
+.venue-pics-pcb .prev{position:absolute;top:187px;height:50px;width:36px;overflow:hidden;cursor:pointer;text-indent:-9999px;background:url(../images/newx-flash.png) no-repeat 0 0;_background: url(../images/newx-flash-ie6.png) no-repeat 0 0;left:20px;}
+.venue-pics-pcb .next{position:absolute;top:187px;right:10px;width:36px;height:50px;overflow:hidden;cursor:pointer;text-indent:-9999px;background:url(../images/newx-flash.png) no-repeat -47px 0;_background: url(../images/newx-flash-ie6.png) no-repeat -47px 0;}
+
+
+
+
+
